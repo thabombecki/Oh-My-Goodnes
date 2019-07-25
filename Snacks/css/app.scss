@@ -1,0 +1,361 @@
+@import url("foundation.css");
+@import url("navigations.css");
+@import url("jquery.gridder.min.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+$main-font: 'Open Sans', sans-serif;
+
+$dark: #202e34;
+$lime: #aacb30;
+$aqua: #3bb6a4;
+$other-aqua: #06caa3;
+$pink: #ed5b54;
+
+/*CARD BUTTONS*/
+$card-1: #c866c5;
+$card-2: #ffe01d;
+$card-3: #ff2f3c;
+$card-4: #1272a8;
+$card-5: #31c2c0;
+$card-6: #826cc8;
+$card-7: #ff2f3c;
+
+body {
+	background: $dark;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, p, ul, li {
+  font-family: $main-font;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 6vmin;
+  line-height: 6vmin;
+}
+
+h4 {
+  font-size: 5vmin;
+  line-height: 5vmin;
+  font-weight: 700;
+  color: $dark;
+}
+
+.no-pad {
+  padding: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.title {
+  padding: 10px 0;
+  text-align: center;
+  h1 {
+    font-size: 35px;
+    margin: 0;
+    font-weight: 800;
+    color: #ffffff;
+    @media screen and (max-width: 39.9375em) {
+      font-size: 25px;
+    }
+  }
+}
+
+.header {
+	background-image: url(https://www.checkers.co.za/content/dam/checkerssouthafrica/websites/checkerssouthafrica/Campaigns/2017/healthy-kids-snacks/img/bg.jpg);
+  background-repeat: repeat-x;
+  background-color: $dark;
+  background-position: top center;
+  padding-top: 335px;
+    
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    padding-top: 304px;
+  }
+
+  // .large-12 {
+  //   @media screen and (min-width: 64em) {
+  //     padding: 0 177px;
+  //   }
+  // }
+
+  .columns {
+    @media screen and (max-width: 39.9375em) {
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 39.9375em) {
+    background-size: 195%;
+    padding-top: 40%;
+    padding-bottom: 3%;
+  }
+
+  @media screen and (min-width: 40em) {
+    padding-top: 19%;
+    background-size: cover;
+  }
+
+  img {
+    margin-bottom: 5%;
+    margin-top: 2%;
+    @media screen and (max-width: 39.9375em) {
+      width: 26%;
+      margin-top: 0;
+    }
+
+    @media screen and (min-width: 40em) {
+      width: 15%;
+    }
+  }
+}
+
+.intro {
+  p {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    span {
+      color: $pink;
+    }
+    @media screen and (max-width: 39.9375em) {
+      font-size: 17px;
+    }
+  }
+}
+
+.products {
+
+  .gridder {
+    position: relative;
+
+    .gridder-list-not {
+      width: 33.333333%;
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+
+      @media screen and (max-width: 39.9375em) {
+        width: 100%;
+      }
+
+      button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #ffffff;
+        font-size: 25px;
+        // font-size: 3.5vmin;
+        font-weight: 700;
+        width: 100%;
+        // padding: 30px 0 14px 0;
+        padding: 7% 0 4.2% 0;
+        transition: all 0.4s ease 0s;
+
+        @media screen and (max-width: 39.9375em) {
+          font-size: 18px;        
+        }   
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+          font-size: 18px;
+        }
+
+        svg {
+          margin-top: 1%;
+          width: 20px;
+          height: 20px;
+          fill: #ffffff;
+        }
+      }
+      
+      .card-9 {
+        background: $card-4;
+        &:hover, &:focus {
+          background: #ffffff;
+          color: $card-4;
+          svg {fill: $card-4;}
+        }
+      }
+    }
+
+    .gridder-list-double {
+      width: 66.666666%;
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+
+      @media screen and (max-width: 39.9375em) {
+        width: 100%;
+      }
+    }
+
+    .gridder-list {
+      width: 33.333333%;
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+
+      @media screen and (max-width: 39.9375em) {
+        width: 100%;
+      }
+
+      button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #ffffff;
+        font-size: 25px;
+        // font-size: 3.5vmin;
+        font-weight: 700;
+        width: 100%;
+        // padding: 30px 0 14px 0;
+        padding: 7% 0 4.2% 0;
+        transition: all 0.4s ease 0s;
+
+        @media screen and (max-width: 39.9375em) {
+          font-size: 18px;        
+        }  
+        @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+          font-size: 18px;
+        }
+
+        svg {
+          margin-top: 1%;
+          width: 20px;
+          height: 20px;
+          fill: #ffffff;
+        }
+      }
+
+      .card-1 {
+        background: $card-1;
+        &:hover, &:focus {
+          background: #ffffff;
+          color: $card-1;
+          svg {fill: $card-1;}
+        }
+      }
+      .card-2 {
+        background: $card-2;
+        &:hover, &:focus {
+          background: #ffffff;
+          color: $card-2;
+          svg {fill: $card-2;}
+        }
+      }
+      .card-3 {
+        background: $card-3;
+        &:hover, &:focus {
+          background: #ffffff;
+          color: $card-3;
+          svg {fill: $card-3;}
+        }
+      }
+      .card-4 {
+        background: $card-4;
+        &:hover, &:focus {
+          background: #ffffff;
+          color: $card-4;
+          svg {fill: $card-4;}
+        }
+      }
+      .card-5 {
+        background: $card-5;
+        &:hover, &:focus {
+          background: #ffffff;
+          color: $card-5;
+          svg {fill: $card-5;}
+        }
+      }
+      .card-6 {
+        background: $card-6;
+        &:hover, &:focus {
+          background: #ffffff;
+          color: $card-6;
+          svg {fill: $card-6;}
+        }
+      }
+      .card-7 {
+        background: $card-7;
+        &:hover, &:focus {
+          background: #ffffff;
+          color: $card-7;
+          svg {fill: $card-7;}
+        }
+      }
+
+      &:nth-child(n) {
+        margin: 0;
+      }
+    }
+
+    .gridder-close {
+      position: absolute;
+      top: 0%;
+      right: 1%;
+      font-size: 35px;
+      color: $dark;
+
+      @media screen and (max-width: 39.9375em) {
+        font-size: 25px;
+      }
+    }
+  }
+
+}
+
+.ad-title {
+  background: $dark;
+  color: $pink;
+  // font-weight: 800;
+  padding: 2% 0;
+}
+
+.video {
+  background-image: url(https://www.checkers.co.za/content/dam/checkerssouthafrica/websites/checkerssouthafrica/Campaigns/2017/healthy-kids-snacks/img/video-bg.jpg);
+  background-size: cover;
+  // background-position: top center;
+  text-align: center;
+  .responsive-embed {
+    padding: 5% 10%;
+  }
+}
+
+.goodness {
+  text-align: center;
+  padding: 2% 0;
+  h2 {
+    color: $pink;
+    span {
+      color: $card-5;
+    }
+  }
+} 
+
+.sign-up {
+  background: $card-5;
+  padding: 2%;
+
+  button {
+    margin-top: 1%;
+    background: $dark;
+    color: $card-5;
+    font-size: 15px;
+    padding: 1% 3%;
+    border-radius: 5px;
+    transition: all 0.4s ease 0s;
+
+    @media screen and (max-width: 39.9375em) {
+      padding: 3% 5%;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+

@@ -1,0 +1,158 @@
+@import url("foundation.css");
+@import url("navigations.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+$main-font: 'Open Sans', sans-serif;
+
+$dark: #202e34;
+$lime: #aacb30;
+$aqua: #3bb6a4;
+$other-aqua: #06caa3;
+$pink: #ed5b54;
+$title: #221e20;
+
+body {
+	background: $dark;
+  // text-align: center;
+}
+
+h1, h2, h3, h4, h5, p, ul, li {
+  font-family: $main-font;
+}
+
+p {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  span {
+    color: $pink;
+  }
+  @media screen and (max-width: 39.9375em) {
+    font-size: 14px;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 6vmin;
+  line-height: 6vmin;
+}
+
+h4 {
+  font-size: 5vmin;
+  line-height: 5vmin;
+  font-weight: 700;
+  color: $dark;
+}
+
+.no-pad {
+  padding: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.title {
+  padding: 10px 0;
+  text-align: center;
+  h1 {
+    font-size: 35px;
+    margin: 0;
+    font-weight: 800;
+    color: #ffffff;
+    @media screen and (max-width: 39.9375em) {
+      font-size: 25px;
+    }
+  }
+}
+
+.header {
+	background-image: url(https://www.checkers.co.za/content/dam/checkerssouthafrica/websites/checkerssouthafrica/Campaigns/2017/healthy-kids-snacks/new-landing/img/bg.jpg);
+  background-repeat: repeat-x;
+  background-color: $dark;
+  background-position: top center;
+  padding-top: 335px;
+  text-align: center;
+    
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    padding-top: 304px;
+  }
+
+  // .large-12 {
+  //   @media screen and (min-width: 64em) {
+  //     padding: 0 177px;
+  //   }
+  // }
+
+  .columns {
+    @media screen and (max-width: 39.9375em) {
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 39.9375em) {
+    background-size: 195%;
+    padding-top: 53%;
+  }
+
+  @media screen and (min-width: 40em) {
+    padding-top: 27%;
+    background-size: 100%;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+  img {
+    margin-bottom: 5%;
+    margin-top: 2%;
+    @media screen and (max-width: 39.9375em) {
+      width: 26%;
+      margin-top: 0;
+    }
+
+    @media screen and (min-width: 40em) {
+      width: 15%;
+    }
+  }
+}
+
+.cards {
+  text-align: center;
+  margin: 40px 0;
+
+  @media screen and (max-width: 39.9375em) {
+    margin: 0;
+    .links {
+      margin-bottom: 20px;
+    }
+  }
+  button {
+    color: #ffffff;
+    font-size: 24px;
+    width: 100%;
+    padding: 30px 0;
+    font-weight: 700;
+    @media screen and (max-width: 39.9375em) {
+      font-size: 15px;
+    }
+  }
+  .blue {
+    background: #008797;
+  }
+  .red {
+    background: #e01b2b;
+  }
+}
+
+.goodness {
+  background: url(https://www.checkers.co.za/content/dam/checkerssouthafrica/websites/checkerssouthafrica/Campaigns/2017/healthy-kids-snacks/new-landing/img/fruit-bg.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
